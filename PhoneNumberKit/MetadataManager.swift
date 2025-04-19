@@ -9,7 +9,7 @@
 import Foundation
 
 final class MetadataManager {
-    private(set) var territories = [MetadataTerritory]()
+    public private(set) var territories = [MetadataTerritory]()
 
     private var territoriesByCode = [UInt64: [MetadataTerritory]]()
     private var mainTerritoryByCode = [UInt64: MetadataTerritory]()
